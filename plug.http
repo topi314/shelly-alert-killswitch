@@ -1,0 +1,7 @@
+### turn plug on
+
+GET http://{{ADDRESS}}/relay/0?turn=on
+
+### turn plug off
+
+GET http://{{ADDRESS}}/relay/0?turn=off

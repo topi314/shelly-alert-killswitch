@@ -1,0 +1,17 @@
+[log]
+level = "info"
+format = "text"
+add_source = false
+
+[server]
+listen_addr = ":8080"
+
+[[configs]]
+name = "example"
+endpoint = "/webhook"
+address = "hostname:port"
+insecure = true
+username = "user"
+password = "password"
+relay = 0
+labels = { name = "bla" }

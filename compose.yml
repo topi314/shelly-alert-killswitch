@@ -1,0 +1,9 @@
+services:
+  shelly-alert-killswitch:
+    image: ghcr.io/topi314/shelly-alert-killswitch:master
+    container_name: shelly-alert-killswitch
+    restart: unless-stopped
+    volumes:
+      - ./config.toml:/var/lib/shelly-alert-killswitch/config.toml
+    ports:
+      - "8080:8080"
